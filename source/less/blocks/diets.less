@@ -1,0 +1,72 @@
+.diets {
+  width: 280px;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.diets__block {
+  width: 225px;
+  padding-left: 20px;
+  padding-right: 35px;
+  padding-top: 33px;
+  background-color: #f2f2f2;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.diets__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 37px;
+  color: #111;
+  text-transform: uppercase;
+  margin-left: 70px;
+  margin-bottom: 32px;
+  font-weight: normal;
+}
+
+.diets__title::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+  border-radius: 50%;
+  position: absolute;
+  left: 22px;
+  top: 23px;
+}
+
+.diets__title::after {
+  content: "";
+  left: 22px;
+  top: 22px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.diets__link {
+  display: block;
+  text-decoration: none;
+  color: #111;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding: 20px;
+  padding-left: 0;
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.diets__link::after {
+  content: "";
+  width: 25px;
+  height: 13px;
+  background: url("../img/icon-right-arrow-long.svg") no-repeat;
+  position: absolute;
+  left: 95px;
+  top: 22px;
+}
