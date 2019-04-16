@@ -1,0 +1,35 @@
+.show-more {
+  width: 280px;
+  padding: 80px 20px 25px;
+  .border;
+  position: relative;
+}
+
+.show-more::before {
+  content: "";
+  width: 31px;
+  height: 31px;
+  background: url("../img/icon-plus-mobile.svg") no-repeat;
+  position: absolute;
+  left: calc(~"50% - 15.5px");
+  top: 27px;
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+.show-more__title {
+  color: #111111;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.show-more__subtitle {
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 20px;
+  margin-top: 9px;
+  .arial-mt;
+}
