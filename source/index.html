@@ -2,29 +2,38 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Кэт энерджи</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo-link" href="#">
-        <img class="page-header__logo" src="img/logo-mobile.svg" alt="Cat Energy" width="190" height="40">
-      </a>
-      <h1 class="page-header__main-title visually-hidden">Cat Energy</h1>
-      <nav class="page-header__main-menu main-menu-toggle">
-        <button class="main-menu-toggle__button" type="button">Открыть меню</button>
-        <ul class="main-menu-toggle__site-nav">
-          <li class="main-menu-toggle__site-nav-item"><a class="main-menu-toggle__site-nav-item-link" href="#">Главная</a></li>
-          <li class="main-menu-toggle__site-nav-item"><a class="main-menu-toggle__site-nav-item-link" href="catalog.html">Каталог продукции</a></li>
-          <li class="main-menu-toggle__site-nav-item"><a class="main-menu-toggle__site-nav-item-link" href="#">Подбор программы</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <div class="page-header__container">
+          <a class="page-header__logo-link" href="#">
+            <img class="page-header__logo" src="img/logo-mobile.svg" alt="Cat Energy" width="190" height="40">
+          </a>
+          <nav class="page-header__main-menu main-menu-toggle">
+            <button class="main-menu-toggle__button" type="button">Открыть меню</button>
+            <ul class="main-menu-toggle__site-nav">
+              <li class="main-menu-toggle__site-nav-item"><a class="main-menu-toggle__site-nav-item-link" href="#">Главная</a></li>
+              <li class="main-menu-toggle__site-nav-item"><a class="main-menu-toggle__site-nav-item-link" href="catalog.html">Каталог продукции</a></li>
+              <li class="main-menu-toggle__site-nav-item"><a class="main-menu-toggle__site-nav-item-link" href="#">Подбор программы</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main class="page-main page-main--index">
-      <h2 class="page-main__title">Функциональное питание для котов</h2>
-      <p class="page-main__subtitle">Занялся собой? Займись котом!</p>
-      <div class="wrapper">
-        <a class="page-main__button button" href="form.html">Подобрать программу</a>
+      <div class="container">
+        <div class="page-main__container-top">
+          <h1 class="page-main__title">Функциональное питание для котов</h1>
+          <p class="page-main__subtitle">Занялся собой? Займись котом!</p>
+          <a class="page-main__button button button--main" href="form.html">Подобрать программу</a>
+        </div>
+      </div>
+      <div class="container">
         <section class="diets">
           <h2 class="visually-hidden">Программы по похудению</h2>
           <div class="diets__block">
@@ -35,8 +44,8 @@
             </p>
             <a class="diets__link" href="#">Каталог Slim</a>
           </div>
-          <div class="diets__block">
-            <h3 class="diets__title diets__title--weight-gain">Похудение</h3>
+          <div class="diets__block diets__block--weight-gain">
+            <h3 class="diets__title diets__title--weight-gain">Набор массы</h3>
             <p class="diets__diet-description paragraph">
               Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -63,7 +72,7 @@
               </p>
             </li>
             <li class="advantages__item advantages__item--4">
-              <p class="advantages__item-description paragraph">
+              <p class="advantages__item-description advantages__item-description--4 paragraph">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
               </p>
             </li>
@@ -71,54 +80,63 @@
         </section>
       </div>
       <div class="background-wrapper">
-        <div class="wrapper">
+        <div class="container">
           <section class="example">
-            <h2 class="example__title big-title">Живой пример</h2>
-            <p class="example__description paragraph">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-              Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-            </p>
-            <div class="example__arguments-block">
-              <fieldset class="example__arguments"><div class="example__arguments-wrapper">5 кг</div><legend class="example__arguments-add">снижение веса</legend></fieldset>
-              <fieldset class="example__arguments"><div class="example__arguments-wrapper">60 дней</div><legend class="example__arguments-add">затрачено времени</legend></fieldset>
+            <div class="example__container">
+              <h2 class="example__title big-title">Живой пример</h2>
+              <p class="example__description paragraph">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+                Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              </p>
+              <div class="example__arguments-block">
+                <fieldset class="example__arguments example__arguments--first-argument"><div class="example__arguments-wrapper">5 кг</div><legend class="example__arguments-add">снижение веса</legend></fieldset>
+                <fieldset class="example__arguments"><div class="example__arguments-wrapper">60 дней</div><legend class="example__arguments-add">затрачено времени</legend></fieldset>
+                <p class="example__cost">Затраты на питание: <span class="example__cost-price">15000 руб.</span></p>
+              </div>
             </div>
-            <p class="example__cost">Затраты на питание: 15000 руб.</p>
             <!--тута будет слайдер с котиком-->
+            <div class="example__slider"></div>
           </section>
         </div>
       </div>
     </main>
     <footer class="page-footer">
-      <section class="page-footer__contacts contacts">
-        <div class="contacts__job-block">
-          <b class="contacts__vacancy">Приглашаем <br>к сотрудничеству дилеров!</b>
-          <adress class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</adress>
-        </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5939081410008!2d30.322832821512165!3d59.938880399242294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1555169574069!5m2!1sru!2sru" width="320" height="375" frameborder="0" style="border:0; margin-bottom: -5px" allowfullscreen></iframe>
-      </section>
-      <div class="background-wrapper">
-        <div class="page-footer__logo">
-          <a class="page-footer__logo-link"><img class="page-footer__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy"></a>
-        </div>
-        <div class="page-footer__socials socials">
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a class="socials__link socials__link--vk" href="#" aria-label="Мы в Вконтакте"></a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link socials__link--inst" href="#" aria-label="Мы в Инстаграмме"></a>
-            </li>
-            <li class="socials__item socials__item--last-child"> <!--Тут надо было сделать классом,как я сделал,или все-таки можно было псевдоклассом?-->
-              <a class="socials__link socials__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a>
-            </li>
-          </ul>
-        </div>
-        <div class="developer">
-          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="developer__link-img" href="https://htmlacademy.ru/intensive/adaptive">
-            HTML Academy
-            <svg class="developer__link-img-svg" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
-          </a>
+      <div class="container">
+        <section class="page-footer__contacts contacts">
+          <div class="contacts__job-block">
+            <b class="contacts__vacancy">Приглашаем <br>к сотрудничеству дилеров!</b>
+            <adress class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-city">Санкт-Петербург</span></adress>
+          </div>
+        </section>
+      </div>
+      <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5939081410008!2d30.322832821512165!3d59.938880399242294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1555169574069!5m2!1sru!2sru" width="320" height="375" frameborder="0" allowfullscreen></iframe>
+      <div class="background-wrapper background-wrapper--footer">
+        <div class="container">
+          <div class="page-footer__bottom-footer">
+            <div class="page-footer__logo">
+              <a class="page-footer__logo-link"><img class="page-footer__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy"></a>
+            </div>
+            <div class="page-footer__socials socials">
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a class="socials__link socials__link--vk" href="#" aria-label="Мы в Вконтакте"></a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link socials__link--inst" href="#" aria-label="Мы в Инстаграмме"></a>
+                </li>
+                <li class="socials__item socials__item--last-child"> <!--Тут надо было сделать классом,как я сделал,или все-таки можно было псевдоклассом?-->
+                  <a class="socials__link socials__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="developer">
+              <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <a class="developer__link-img" href="https://htmlacademy.ru/intensive/adaptive">
+                HTML Academy
+                <svg class="developer__link-img-svg" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
