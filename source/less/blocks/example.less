@@ -11,6 +11,7 @@
 .example__arguments-block {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .example__arguments {
@@ -37,10 +38,101 @@
 }
 
 .example__cost {
-  margin: 0;
+  margin: 0 auto;
   margin-top: 20px;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .example {
+    padding-top: 50px;
+    width: auto;
+  }
+
+  .example__description {
+    padding-right: 30px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__arguments-block {
+    justify-content: flex-start;
+    margin-bottom: 80px;
+  }
+
+  .example__arguments {
+    margin-right: 0;
+    width: 140px;
+    font-size: 30px;
+    line-height: 37px;
+    border: 1px solid #cdcdcd;
+  }
+
+  .example__arguments--first-argument {
+    margin-right: 42px;
+  }
+
+  .example__cost {
+    margin-right: 0;
+    margin-top: 0;
+    margin-left: auto;
+    width: 175px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+  }
+
+  .example__arguments-add {
+    font-size: 14px;
+    line-height: 14px;
+    width: auto;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .example {
+    display: flex;
+    padding-top: 0;
+  }
+
+  .example__container {
+    width: 435px;
+    margin-right: 140px;
+    margin-left: 0;
+  }
+
+  .example__title {
+    margin-bottom: 35px;
+    padding: 0;
+    position: relative;
+    top: -130px;
+  }
+
+  .example__description {
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 70px;
+  }
+
+  .example__cost {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 50px;
+    text-align: left;
+  }
+
+  .example__cost-price {
+    margin-left: 60px;
+    margin-bottom: 73px;
+  }
+
+  .example__arguments {
+    width: 115px;
+    padding-bottom: 10px;
+  }
 }

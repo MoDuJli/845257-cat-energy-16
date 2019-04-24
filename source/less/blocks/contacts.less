@@ -14,7 +14,6 @@
   color: #111111;
   text-transform: uppercase;
   width: 50%;
-  padding: 10px 5px;
 }
 
 .contacts__address {
@@ -29,4 +28,50 @@
 
 .contacts--catalog {
   background-color: #f2f2f2;
+}
+
+@media (min-width: 768px) {
+  .contacts__job-block {
+    width: auto;
+    padding: 70px;
+    padding-bottom: 60px;
+    justify-content: space-between;
+  }
+
+  .contacts__vacancy {
+    width: 155px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    width: 155px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .contacts__address-city {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__job-block {
+    position: absolute;
+    background-color: #ffffff;
+    width: 405px;
+    top: 95px;
+    padding: 45px 90px 40px 75px;
+  }
+
+  .contacts__address {
+    text-align: left;
+    padding: 0;
+  }
 }
