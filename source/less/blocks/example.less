@@ -1,6 +1,7 @@
 .example {
   width: 280px;
   margin: 0 auto;
+  padding-bottom: 35px;
 }
 
 .example__description {
@@ -46,10 +47,92 @@
   line-height: 20px;
 }
 
-@media (min-width: 768px) {
+.example__img-after {
+  display: none;
+}
+
+.example__label {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.example__slider-range-block {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 45px;
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.example__slider-range {
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  padding-left: 6px;
+  padding-right: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.example__inside-range {
+  width: 40px;
+  height: 6px;
+  background-color: #68b738;
+  border-radius: 3px;
+}
+
+@media (min-width: @tablet-width) {
+  .example__slider {
+    margin-top: 80px;
+    position: relative;
+    padding-top: 370px;
+    padding-bottom: 75px;
+  }
+
+  .example__slider-range-block {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 20px;
+    padding-top: 1px;
+  }
+
+  .example__img-before {
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: -150px;
+    left: 0;
+  }
+
+  .example__slider-range {
+    width: 430px;
+    background-color: #dcdcdc;
+    height: 6px;
+    border-radius: 2.5px;
+    position: relative;
+  }
+
+  .example__inside-range {
+    position: absolute;
+    left: calc(~"50% - 17px");
+    top: -17px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 13px solid #ffffff;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+  }
+
   .example {
     padding-top: 50px;
     width: auto;
+    padding-bottom: 70px;
   }
 
   .example__description {
@@ -94,7 +177,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: @desktop-width) {
   .example {
     display: flex;
     padding-top: 0;
@@ -134,5 +217,13 @@
   .example__arguments {
     width: 115px;
     padding-bottom: 10px;
+  }
+
+  .example__arguments-block {
+    margin-bottom: 5px;
+  }
+
+  .example__slider {
+    margin-top: 0;
   }
 }

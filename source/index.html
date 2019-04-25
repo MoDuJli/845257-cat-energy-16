@@ -14,8 +14,8 @@
           <a class="page-header__logo-link" href="#">
             <img class="page-header__logo" src="img/logo-mobile.svg" alt="Cat Energy" width="190" height="40">
           </a>
-          <nav class="page-header__main-menu main-menu-toggle">
-            <button class="main-menu-toggle__button" type="button">Открыть меню</button>
+          <nav class="page-header__main-menu main-menu-toggle main-menu-toggle--nojs main-menu-toggle--closed">
+            <button class="main-menu-toggle__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-menu-toggle__site-nav">
               <li class="main-menu-toggle__site-nav-item"><a class="main-menu-toggle__site-nav-item-link" href="#">Главная</a></li>
               <li class="main-menu-toggle__site-nav-item"><a class="main-menu-toggle__site-nav-item-link" href="catalog.html">Каталог продукции</a></li>
@@ -26,11 +26,13 @@
       </div>
     </header>
     <main class="page-main page-main--index">
-      <div class="container">
-        <div class="page-main__container-top">
-          <h1 class="page-main__title">Функциональное питание для котов</h1>
-          <p class="page-main__subtitle">Занялся собой? Займись котом!</p>
-          <a class="page-main__button button button--main" href="form.html">Подобрать программу</a>
+      <div class="background-wrapper--main-top">
+        <div class="container">
+          <div class="page-main__container-top">
+            <h1 class="page-main__title">Функциональное питание для котов</h1>
+            <p class="page-main__subtitle">Занялся собой? Займись котом!</p>
+            <a class="page-main__button button button--main" href="form.html">Подобрать программу</a>
+          </div>
         </div>
       </div>
       <div class="container">
@@ -79,7 +81,8 @@
           </ul>
         </section>
       </div>
-      <div class="background-wrapper">
+      <div class="wrapper--special">
+      <div class="background-wrapper background-wrapper--example-description">
         <div class="container">
           <section class="example">
             <div class="example__container">
@@ -94,10 +97,24 @@
                 <p class="example__cost">Затраты на питание: <span class="example__cost-price">15000 руб.</span></p>
               </div>
             </div>
-            <!--тута будет слайдер с котиком-->
-            <div class="example__slider"></div>
           </section>
         </div>
+      </div>
+      <div class="background-wrapper background-wrapper--example">
+        <div class="container">
+          <div class="example__slider">
+            <img class="example__img-before" src="img/before-mobile@1x.png" width="311" height="232">
+            <img class="example__img-after" src="img/after-mobile@1x.png" width="311" height="232">
+            <div class="example__slider-range-block">
+              <span class="example__label">Было</span>
+              <div class="example__slider-range">
+                <div class="example__inside-range"></div>
+              </div>
+              <span class="example__label">Стало</span>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </main>
     <footer class="page-footer">
@@ -140,5 +157,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

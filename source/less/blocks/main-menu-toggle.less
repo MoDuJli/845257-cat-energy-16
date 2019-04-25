@@ -1,3 +1,57 @@
+.main-menu-toggle__button {
+  position: absolute;
+  right: 0;
+  top: 22px;
+  border: 0;
+  width: 25px;
+  height: 20px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.main-menu-toggle--closed .main-menu-toggle__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #222222;
+  box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+}
+
+.main-menu-toggle--opened .main-menu-toggle__button {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    transform: rotate(45deg);
+    background-color: #222222;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 25px;
+    height: 2px;
+    transform: rotate(-45deg);
+    background-color: #222222;
+  }
+}
+
+.main-menu-toggle {
+  width: 320px;
+  margin: 0 -20px;
+}
+
 .main-menu-toggle__site-nav {
   list-style: none;
   margin: 0;
@@ -14,6 +68,11 @@
   padding-right: 10px;
   padding-left: 10px;
   text-align: center;
+  .border();
+}
+
+.main-menu-toggle__site-nav-item:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .main-menu-toggle__site-nav-item-link {
@@ -21,9 +80,27 @@
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (max-width: @mobile-width-only) {
+  .main-menu-toggle--closed .main-menu-toggle__site-nav {
+    display: none;
+  }
+
+  .main-menu-toggle--nojs .main-menu-toggle__button {
+    display: none;
+  }
+
+  .main-menu-toggle--nojs .main-menu-toggle__site-nav {
+    display: block;
+  }
+}
+
+@media (min-width: @tablet-width) {
   .main-menu-toggle__button {
     display: none;
+  }
+
+  .main-menu-toggle {
+    width: auto;
   }
 
   .main-menu-toggle__site-nav {
@@ -39,6 +116,11 @@
   .main-menu-toggle__site-nav-item {
     padding: 0;
     margin-right: 37px;
+    border: 0;
+  }
+
+  .main-menu-toggle__site-nav-item:first-child {
+    border: 0;
   }
 
   .main-menu-toggle__site-nav-item:last-child {
@@ -46,7 +128,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: @desktop-width) {
   .main-menu-toggle__site-nav {
     align-items: flex-end;
     font-size: 20px;
