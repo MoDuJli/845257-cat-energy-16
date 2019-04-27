@@ -10,7 +10,7 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
   min-height: 60px;
 }
 
@@ -32,6 +32,7 @@
   background-image: url("../img/advantage-leaf@1x.png");
   background-repeat: no-repeat;
   background-position: center center;
+  top: -5px;
 }
 
 .advantages__item--2::before {
@@ -52,7 +53,7 @@
   background-position: center center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .advantages {
     padding-bottom: 85px;
     padding-right: 88px;
@@ -121,7 +122,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: @desktop-width) {
   .advantages {
     border: 0;
     padding-right: 0;
