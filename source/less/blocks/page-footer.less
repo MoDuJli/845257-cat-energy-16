@@ -21,6 +21,20 @@
   width: 100%;
 }
 
+.page-footer__map-block {
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 370px;
+  position: relative;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-footer__map-block {
+    background-image: url("../img/bg-map-mobile@2x.png");
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-footer__bottom-footer {
     display: flex;
@@ -43,10 +57,31 @@
   .page-footer__map {
     height: 400px;
   }
+
+  .page-footer__map-block {
+    background-image: url("../img/bg-map-tablet@1x.png");
+    min-height: 400px;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-footer__map-block {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer__logo {
     margin-right: 215px;
+  }
+
+  .page-footer__map-block {
+    background-image: url("../img/bg-map-desktop@1x.png");
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-footer__map-block {
+      background-image: url("../img/bg-map-desktop@2x.png");
+    }
   }
 }

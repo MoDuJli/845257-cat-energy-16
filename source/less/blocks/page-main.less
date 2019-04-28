@@ -30,11 +30,33 @@
 }
 
 .page-main__bargain {
-  padding-bottom: 35px;
-  width: 280px;
+  width: 160px;
   margin: 0 auto;
-  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
-  min-height: 290px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100px;
+  margin-bottom: 35px;
+  position: relative;
+  padding: 190px 60px 0;
+}
+
+.page-main__bargain::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 61px;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 65px;
+  left: 113px;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-main__bargain {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .page-main__bargain-offer {
@@ -43,12 +65,13 @@
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
-  padding: 190px 59px 0;
   text-align: center;
+  display: block;
 }
 
 .page-main__container-top {
   padding-top: 25px;
+  z-index: 100;
 }
 
 @media (min-width: @tablet-width) {
@@ -77,7 +100,22 @@
   }
 
   .page-main__bargain {
-    padding-bottom: 75px;
+    margin-bottom: 75px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    width: 100%;
+    background-size: 100%;
+    padding: 0;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .page-main__bargain-offer {
+    display: block;
+    width: 165px;
+    text-align: left;
+    padding-right: 125px;
   }
 
   .page-main__container-top {
@@ -86,6 +124,17 @@
     background-position: center 220px;
     padding-top: 35px;
     padding-bottom: 1px;
+    background-size: 709px 609px;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-main__container-top {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+    }
+
+    .page-main__bargain {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 }
 
@@ -95,6 +144,34 @@
     padding-top: 85px;
     margin-left: 80px;
     background: url("../img/index-can-desktop@1x.png") no-repeat 100% 0;
+    background-size: 552px 499px;
+  }
+
+  .page-main__bargain {
+    width: 165px;
+    min-height: 100px;
+    margin-top: 105px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    display: block;
+    padding: 190px 40px 0;
+  }
+
+  .page-main__bargain::after {
+    left: 96px;
+  }
+
+  .page-main__bargain-offer {
+    text-align: center;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-main__container-top {
+      background-image: url("../img/index-can-desktop@2x.png");
+    }
+
+    .page-main__bargain {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   .page-main__title {
@@ -111,11 +188,5 @@
   .page-main__catalog-title {
     padding-top: 80px;
     padding-bottom: 80px;
-  }
-
-  .page-main__bargain {
-    width: 245px;
-    min-height: 290px;
-    margin-top: 105px;
   }
 }
