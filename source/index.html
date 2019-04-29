@@ -13,7 +13,7 @@
         <div class="page-header__container">
           <a class="page-header__logo-link" href="#">
             <picture class="page-header__img-block">
-              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
               <img class="page-header__logo" src="img/logo-mobile.svg" alt="Cat Energy" width="190" height="40">
             </picture>
@@ -101,8 +101,16 @@
               </div>
             </div>
             <div class="example__slider">
-              <img class="example__img-before" src="img/before-mobile@1x.png" width="311" height="232">
-              <img class="example__img-after" src="img/after-mobile@1x.png" width="311" height="232">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="example__img-before" srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x" width="311" height="232">
+              </picture>
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="example__img-after" srcset="img/after-mobile@1x.png 1x, img/after-mobile@2x.png 2x" width="311" height="232">
+              </picture>
               <div class="example__slider-range-block">
                 <span class="example__label">Было</span>
                 <div class="example__slider-range">
@@ -124,7 +132,9 @@
           </div>
         </section>
       </div>
-      <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5939081410008!2d30.322832821512165!3d59.938880399242294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1555169574069!5m2!1sru!2sru" width="320" height="375" frameborder="0" allowfullscreen></iframe>
+      <div class="page-footer__map-block">
+        <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5939081410008!2d30.322832821512165!3d59.938880399242294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1555169574069!5m2!1sru!2sru" width="320" height="375" frameborder="0" allowfullscreen></iframe>
+      </div>
       <div class="background-wrapper background-wrapper--footer">
         <div class="container">
           <div class="page-footer__bottom-footer">
