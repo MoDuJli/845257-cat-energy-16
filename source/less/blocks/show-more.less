@@ -18,6 +18,8 @@
 
 .show-more__title {
   color: #111111;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: normal;
   text-transform: uppercase;
   margin: 0 auto;
@@ -35,12 +37,21 @@
 @media (min-width: @tablet-width) {
   .show-more {
     width: 250px;
-    padding-top: 165px;
+    padding-top: 163px;
     padding-bottom: 40px;
     padding-right: 37px;
     padding-left: 37px;
     background-color: #ffffff;
     border: 1px solid rgba(205, 205, 205, 0.5);
+  }
+
+  .show-more::before {
+    width: 61px;
+    height: 61px;
+    background: url("../img/icon-plus.svg") no-repeat;
+    left: calc(~"50% - 30.5px");
+    top: 55px;
+    opacity: 0.2;
   }
 
   .show-more__title {
@@ -54,15 +65,16 @@
     width: 180px;
     text-align: center;
     font-size: 16px;
+    line-height: 20px;
     margin-bottom: 85px;
-    margin-top: 28px;
+    margin-top: 25px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .show-more {
     width: 195px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }

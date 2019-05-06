@@ -7,6 +7,17 @@
   align-items: center;
 }
 
+.developer__link:hover + .developer__link-img svg,
+.developer__link-img:hover svg {
+  fill: #68b738;
+}
+
+.developer__link:active + .developer__link-img svg,
+.developer__link:active,
+.developer__link-img:active svg {
+  opacity: 0.3;
+}
+
 .developer__link {
   .arial-mt;
   font-size: 16px;
@@ -26,9 +37,18 @@
   fill: #666666;
 }
 
+.developer--catalog {
+  min-height: 84px;
+}
+
+.developer--catalog a {
+  padding-bottom: 13px;
+}
+
 @media (min-width: @tablet-width) {
   .developer {
     width: 160px;
+    margin: 0;
   }
 }
 
@@ -37,5 +57,9 @@
     width: 160px;
     margin-right: 0;
     margin-left: auto;
+  }
+
+  .developer--catalog a {
+    padding-bottom: 0;
   }
 }

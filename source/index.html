@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Кэт энерджи</title>
-    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
-    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -24,8 +24,8 @@
           </a>
           <nav class="page-header__main-menu main-menu main-menu--nojs main-menu--closed">
             <button class="main-menu__button" type="button" aria-label="Открыть меню"></button>
-            <ul class="main-menu__site-nav">
-              <li class="main-menu__site-nav-item"><a class="main-menu__site-nav-item-link" href="#">Главная</a></li>
+            <ul class="main-menu__site-nav main-menu__site-nav--index-page">
+              <li class="main-menu__site-nav-item"><a class="main-menu__site-nav-item-link main-menu__site-nav-item-link--active" href="#">Главная</a></li>
               <li class="main-menu__site-nav-item"><a class="main-menu__site-nav-item-link" href="catalog.html">Каталог продукции</a></li>
               <li class="main-menu__site-nav-item"><a class="main-menu__site-nav-item-link" href="#">Подбор программы</a></li>
             </ul>
@@ -83,7 +83,7 @@
             </li>
             <li class="advantages__item advantages__item--4">
               <p class="advantages__item-description advantages__item-description--4 paragraph">
-                Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+                Уже через месяц наслаждайтесь изменениями к лучшему <span>вашего</span> питомца!
               </p>
             </li>
           </ul>
@@ -101,7 +101,7 @@
               <div class="example__arguments-block">
                 <fieldset class="example__arguments example__arguments--first-argument"><div class="example__arguments-wrapper">5 кг</div><legend class="example__arguments-add">снижение веса</legend></fieldset>
                 <fieldset class="example__arguments"><div class="example__arguments-wrapper">60 дней</div><legend class="example__arguments-add">затрачено времени</legend></fieldset>
-                <p class="example__cost">Затраты на питание: <span class="example__cost-price">15000 руб.</span></p>
+                <p class="example__cost">Затраты на питание: <span class="example__cost-price">15 000 руб.</span></p>
               </div>
             </div>
             <div class="example__slider">
@@ -122,11 +122,11 @@
                 <img class="example__img-after" srcset="img/after-mobile@1x.png 1x, img/after-mobile@2x.png 2x" width="311" height="232">
               </picture>
               <div class="example__slider-range-block">
-                <span class="example__label">Было</span>
+                <a class="example__label" href="#">Было</a>
                 <div class="example__slider-range">
                   <div class="example__inside-range"></div>
                 </div>
-                <span class="example__label">Стало</span>
+                <a class="example__label" href="#">Стало</a>
               </div>
             </div>
           </section>
@@ -159,8 +159,8 @@
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a class="socials__link socials__link--inst" href="#" aria-label="Мы в Инстаграмме">
-                    <svg width="17" height="17"><use xlink:href="#icon-inst"></use></svg>
+                  <a class="socials__link socials__link--insta" href="#" aria-label="Мы в Инстаграмме">
+                    <svg width="17" height="17"><use xlink:href="#icon-insta"></use></svg>
                   </a>
                 </li>
                 <li class="socials__item socials__item--last-child"> <!--Тут надо было сделать классом,как я сделал,или все-таки можно было псевдоклассом?-->
@@ -175,7 +175,7 @@
               <a class="developer__link-img" href="https://htmlacademy.ru/intensive/adaptive">
                 HTML Academy
                 <svg class="developer__link-img-svg" xmlns="http://www.w3.org/2000/svg" width="27" height="34">
-                  <use xlink:href="#htmlacademy-link"></use>
+                  <use xlink:href="#icon-htmlacademy"></use>
                 </svg>
               </a>
             </div>

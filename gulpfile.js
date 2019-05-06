@@ -55,7 +55,7 @@ gulp.task("sprite", function() {
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("html", function() {
@@ -101,7 +101,7 @@ gulp.task("copy", function() {
 });
 
 gulp.task("html-min", function() {
-  return gulp.src("source/*.html")
+  return gulp.src("build/*.html")
     .pipe(htmlmin())
     .pipe(gulp.dest("build"));
 })
@@ -117,8 +117,8 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "sprite",
-  "html-min",
   "html",
+  "html-min",
   "js-min"
 ))
 

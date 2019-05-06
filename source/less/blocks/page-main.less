@@ -25,20 +25,21 @@
 .page-main__catalog-title {
   display: block;
   margin-bottom: 0;
-  padding-bottom: 30px;
+  padding: 15px 20px 27px;
   .border;
 }
 
 .page-main__bargain {
-  width: 160px;
+  width: 180px;
   margin: 0 auto;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100px;
   margin-bottom: 35px;
+  margin-top: 39px;
   position: relative;
-  padding: 190px 60px 0;
+  padding: 188px 50px 0;
 }
 
 .page-main__bargain::after {
@@ -81,7 +82,7 @@
     color: #111111;
     padding-right: 195px;
     text-align: left;
-    padding-left: 95px;
+    padding-left: 90px;
   }
 
   .page-main__subtitle {
@@ -89,14 +90,16 @@
     line-height: 20px;
     color: #111111;
     text-align: left;
-    padding-left: 95px;
+    padding-left: 90px;
     margin-bottom: 48px;
+    margin-top: 40px;
   }
 
   .page-main__catalog-title {
-    padding-top: 15px;
+    padding-top: 35px;
     border: 0;
-    padding-bottom: 75px;
+    padding-bottom: 95px;
+    padding-left: 0;
   }
 
   .page-main__bargain {
@@ -111,17 +114,21 @@
     justify-content: flex-end;
   }
 
+  .page-main__bargain::after {
+    left: 90px;
+  }
+
   .page-main__bargain-offer {
     display: block;
     width: 165px;
     text-align: left;
-    padding-right: 125px;
+    padding-right: 120px;
   }
 
   .page-main__container-top {
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center 220px;
+    background-position: center 235px;
     padding-top: 35px;
     padding-bottom: 1px;
     background-size: 709px 609px;
@@ -141,16 +148,18 @@
 @media (min-width: @desktop-width) {
   .page-main__container-top {
     width: 920px;
-    padding-top: 85px;
+    padding-top: 107px;
     margin-left: 80px;
     background: url("../img/index-can-desktop@1x.png") no-repeat 100% 0;
     background-size: 552px 499px;
+    background-position-y: 27px;
   }
 
   .page-main__bargain {
     width: 165px;
     min-height: 100px;
-    margin-top: 105px;
+    margin-top: 118px;
+    margin-bottom: 75px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     display: block;
     padding: 190px 40px 0;
@@ -182,11 +191,12 @@
   .page-main__subtitle {
     padding: 0;
     padding-right: 500px;
-    margin-top: 33px;
+    margin-top: 40px;
+    margin-bottom: 53px;
   }
 
   .page-main__catalog-title {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 72px;
+    padding-bottom: 96px;
   }
 }

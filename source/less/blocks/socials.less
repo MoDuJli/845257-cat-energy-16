@@ -27,6 +27,14 @@
   display: block;
 }
 
+.socials__link:hover svg {
+  fill: #68b748;
+}
+
+.socials__link:active svg {
+  opacity: 0.3;
+}
+
 .socials__link svg {
   fill: #666666;
 }
@@ -36,7 +44,7 @@
   height: 12px;
 }
 
-.socials__link--inst {
+.socials__link--insta {
   width: 17px;
   height: 17px;
 }
@@ -50,7 +58,8 @@
   .socials {
     border: 0;
     width: 125px;
-    margin-right: 137px;
+    margin-right: 135px;
+    padding-bottom: 10px;
   }
 
   .socials__list {
@@ -67,8 +76,8 @@
     height: 16px;
   }
 
-  .socials__link--inst,
-  .socials__link--inst svg {
+  .socials__link--insta,
+  .socials__link--insta svg {
     width: 23px;
     height: 23px;
   }
@@ -77,5 +86,12 @@
   .socials__link--facebook svg {
     width: 14px;
     height: 28px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .socials {
+    width: 130px;
+    margin-right: 188px;
   }
 }

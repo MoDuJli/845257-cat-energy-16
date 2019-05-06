@@ -78,28 +78,33 @@
   top: 22px;
 }
 
+.diets__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .diets {
     width: auto;
+    padding-top: 0;
   }
 
   .diets__block {
     width: auto;
     padding-right: 285px;
     padding-left: 50px;
-    padding-bottom: 60px;
-    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-top: 75px;
     margin-bottom: 30px;
   }
 
   .diets__block--weight-gain {
-    padding-right: 360px;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
+    padding-right: 315px;
   }
 
   .diets__link {
     border: 0;
-    margin-top: 20px;
+    margin-top: 18px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -120,23 +125,22 @@
   .diets__title::before {
     width: 200px;
     height: 200px;
-    left: 425px;
-    top: 90px;
+    left: 447px;
+    top: 92px;
   }
 
   .diets__title::after {
     width: 200px;
     height: 200px;
-    top: 80px;
-    left: 435px;
+    top: 75px;
+    left: 447px;
   }
-
 
   .diets__title--weight-gain::after {
     width: 268px;
     height: 113px;
-    top: 130px;
-    left: 390px;
+    top: 135px;
+    left: 412px;
   }
 }
 
@@ -148,7 +152,7 @@
 
   .diets__block {
     width: 470px;
-    padding: 80px 50px 40px;
+    padding: 75px 50px 40px;
     margin-right: 80px;
     margin-bottom: 50px;
   }
@@ -171,7 +175,7 @@
   }
 
   .diets__link {
-    margin-top: 0;
+    margin-top: 10px;
   }
 
   .diets__title::after {
@@ -183,7 +187,11 @@
 
   .diets__title--weight-gain::after {
     width: 135px;
-    top: -35px;
-    left: -185px;
+    top: -30px;
+    left: -180px;
+  }
+
+  .diets__diet-description {
+    padding-bottom: 0;
   }
 }

@@ -6,6 +6,7 @@
   height: 40px;
   padding-top: 10px;
   padding-bottom: 15px;
+  cursor: pointer;
 }
 
 .page-header__container {
@@ -15,11 +16,19 @@
   position: relative;
 }
 
+.page-header__logo-link:hover {
+  opacity: 0.8;
+}
+
+.page-header__logo-link:active {
+  opacity: 0.6;
+}
+
 @media (min-width: @tablet-width) {
   .page-header__logo-link {
     display: flex;
     align-items: center;
-    margin-right: 95px;
+    margin-right: 110px;
     min-height: 105px;
     padding: 0;
   }
@@ -38,6 +47,7 @@
   .page-header__logo-link {
     align-items: flex-end;
     margin-right: 540px;
+    min-height: 115px;
   }
 
   .page-header__container--catalog::after {
