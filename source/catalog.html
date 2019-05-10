@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <svg style="display: none;">
+    <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
-    </svg>
+    </div>
     <header class="page-header">
       <div class="container container--header">
         <div class="page-header__container page-header__container--catalog">
@@ -25,7 +25,7 @@
             <ul class="main-menu__site-nav">
               <li class="main-menu__site-nav-item"><a class="main-menu__site-nav-item-link" href="index.html">Главная</a></li>
               <li class="main-menu__site-nav-item"><a class="main-menu__site-nav-item-link main-menu__site-nav-item-link--active" href="#">Каталог продукции</a></li>
-              <li class="main-menu__site-nav-item"><a class="main-menu__site-nav-item-link" href="#">Подбор программы</a></li>
+              <li class="main-menu__site-nav-item"><a class="main-menu__site-nav-item-link" href="form.html">Подбор программы</a></li>
             </ul>
           </nav>
         </div>
@@ -47,7 +47,7 @@
                   <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
                   <source media="(min-width: 1280px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
-                  <img class="catalog__item-img" srcset="img/chicken-small-mobile@1x.jpg 1x, img/chicken-small-mobile@2x.jpg 2x" width="140" height="144">
+                  <img class="catalog__item-img" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" width="140" height="144" alt="Курица,маленькая упаковка">
                 </picture>
               </a>
               <div class="catalog__item-features item-features">
@@ -77,7 +77,7 @@
                   <source type="image/webp" srcset="img/chicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x">
                   <source media="(min-width: 1280px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
-                  <img class="catalog__item-img catalog__item-img--big" srcset="img/chicken-big-mobile@1x.jpg 1x, img/chicken-big-mobile@2x.jpg 2x" width="140" height="144">
+                  <img class="catalog__item-img catalog__item-img--big" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" width="140" height="144" alt="Курица,большая упаковка">
                 </picture>
               </a>
               <div class="catalog__item-features item-features">
@@ -107,7 +107,7 @@
                   <source type="image/webp" srcset="img/fish-small-mobile@1x.webp 1x, img/fish-small-mobile@2x.webp 2x">
                   <source media="(min-width: 1280px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
-                  <img class="catalog__item-img" srcset="img/fish-small-mobile@1x.jpg 1x, img/fish-small-mobile@2x.jpg 2x" width="140" height="144">
+                  <img class="catalog__item-img" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" width="140" height="144" alt="Рыба,маленькая упаковка">
                 </picture>
               </a>
               <div class="catalog__item-features item-features">
@@ -137,7 +137,7 @@
                   <source type="image/webp" srcset="img/fish-big-mobile@1x.webp 1x, img/fish-big-mobile@2x.webp 2x">
                   <source media="(min-width: 1280px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
-                  <img class="catalog__item-img catalog__item-img--big" srcset="img/fish-big-mobile@1x.jpg 1x, img/fish-big-mobile@2x.jpg 2x" width="140" height="144">
+                  <img class="catalog__item-img catalog__item-img--big" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" width="140" height="144" alt="Рыба,большая упаковка">
                 </picture>
                 </a>
               <div class="catalog__item-features item-features">
@@ -167,7 +167,7 @@
                   <source type="image/webp" srcset="img/buckwheat-small-mobile@1x.webp 1x, img/buckwheat-small-mobile@2x.webp 2x">
                   <source media="(min-width: 1280px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
-                  <img class="catalog__item-img" srcset="img/buckwheat-small-mobile@1x.jpg 1x, img/buckwheat-small-mobile@2x.jpg 2x" width="140" height="144">
+                  <img class="catalog__item-img" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" width="140" height="144" alt="Гречка,маленькая упаковка">
                 </picture>
               </a>
               <div class="catalog__item-features item-features">
@@ -197,7 +197,7 @@
                   <source type="image/webp" srcset="img/buckwheat-big-mobile@1x.webp 1x, img/buckwheat-big-mobile@2x.webp 2x">
                   <source media="(min-width: 1280px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
-                  <img class="catalog__item-img catalog__item-img--big" srcset="img/buckwheat-big-mobile@1x.jpg 1x, img/buckwheat-big-mobile@2x.jpg 2x" width="140" height="144">
+                  <img class="catalog__item-img catalog__item-img--big" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" width="140" height="144" alt="Гречка,большая упаковка">
                 </picture>
               </a>
               <div class="catalog__item-features item-features">
@@ -227,7 +227,7 @@
                   <source type="image/webp" srcset="img/rice-small-mobile@1x.webp 1x, img/rice-small-mobile@2x.webp 2x">
                   <source media="(min-width: 1280px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
-                  <img class="catalog__item-img" srcset="img/ricet-small-mobile@1x.jpg 1x, img/rice-small-mobile@2x.jpg 2x" width="140" height="144">
+                  <img class="catalog__item-img" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" width="140" height="144" alt="Рис,маленькая упаковка">
                 </picture>
               </a>
               <div class="catalog__item-features item-features">
@@ -323,11 +323,11 @@
             <section class="page-footer__contacts contacts contacts--catalog">
               <div class="contacts__job-block">
                 <b class="contacts__vacancy">Приглашаем <br>к сотрудничеству дилеров!</b>
-                <adress class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></adress>
+                <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
               </div>
             </section>
           </div>
-          <iframe class="page-footer__map page-footer__map--catalog" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5939081410008!2d30.322832821512165!3d59.938880399242294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1555169574069!5m2!1sru!2sru" width="320" height="375" frameborder="0" allowfullscreen></iframe>
+          <iframe class="page-footer__map page-footer__map--catalog" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5939081410008!2d30.322832821512165!3d59.938880399242294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1555169574069!5m2!1sru!2sru" width="320" height="375" allowfullscreen></iframe>
         </div>
         <div class="background-wrapper background-wrapper--footer">
           <div class="container">

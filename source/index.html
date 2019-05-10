@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Кэт энерджи</title>
-    <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <svg style="display: none;">
+    <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
-    </svg>
+    </div>
     <header class="page-header">
       <div class="container">
         <div class="page-header__container">
@@ -27,7 +27,7 @@
             <ul class="main-menu__site-nav main-menu__site-nav--index-page">
               <li class="main-menu__site-nav-item"><a class="main-menu__site-nav-item-link main-menu__site-nav-item-link--active" href="#">Главная</a></li>
               <li class="main-menu__site-nav-item"><a class="main-menu__site-nav-item-link" href="catalog.html">Каталог продукции</a></li>
-              <li class="main-menu__site-nav-item"><a class="main-menu__site-nav-item-link" href="#">Подбор программы</a></li>
+              <li class="main-menu__site-nav-item"><a class="main-menu__site-nav-item-link" href="form.html">Подбор программы</a></li>
             </ul>
           </nav>
         </div>
@@ -99,8 +99,8 @@
                 Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
               </p>
               <div class="example__arguments-block">
-                <fieldset class="example__arguments example__arguments--first-argument"><div class="example__arguments-wrapper">5 кг</div><legend class="example__arguments-add">снижение веса</legend></fieldset>
-                <fieldset class="example__arguments"><div class="example__arguments-wrapper">60 дней</div><legend class="example__arguments-add">затрачено времени</legend></fieldset>
+                <fieldset class="example__arguments example__arguments--first-argument"><legend class="example__arguments-add">снижение веса</legend><div class="example__arguments-wrapper">5 кг</div></fieldset>
+                <fieldset class="example__arguments"><legend class="example__arguments-add">затрачено времени</legend><div class="example__arguments-wrapper">60 дней</div></fieldset>
                 <p class="example__cost">Затраты на питание: <span class="example__cost-price">15 000 руб.</span></p>
               </div>
             </div>
@@ -111,7 +111,7 @@
                 <source type="image/webp" srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x">
                 <source media="(min-width: 1280px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                <img class="example__img-before" srcset="img/before-mobile@1x.png 1x, img/before-mobile@2x.png 2x" width="311" height="232">
+                <img class="example__img-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Кот до кормления по нашей программе">
               </picture>
               <picture>
                 <source type="image/webp" media="(min-width: 1280px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
@@ -119,7 +119,7 @@
                 <source type="image/webp" srcset="img/after-mobile@1x.png 1x, img/after-mobile@2x.png 2x">
                 <source media="(min-width: 1280px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                <img class="example__img-after" srcset="img/after-mobile@1x.png 1x, img/after-mobile@2x.png 2x" width="311" height="232">
+                <img class="example__img-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="311" height="232" alt="Кот после кормления по нашей программе">
               </picture>
               <div class="example__slider-range-block">
                 <a class="example__label" href="#">Было</a>
@@ -138,12 +138,12 @@
         <section class="page-footer__contacts contacts">
           <div class="contacts__job-block">
             <b class="contacts__vacancy">Приглашаем <br>к сотрудничеству дилеров!</b>
-            <adress class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-city">Санкт-Петербург</span></adress>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-city">Санкт-Петербург</span></address>
           </div>
         </section>
       </div>
       <div class="page-footer__map-block">
-        <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5939081410008!2d30.322832821512165!3d59.938880399242294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1555169574069!5m2!1sru!2sru" width="320" height="375" frameborder="0" allowfullscreen></iframe>
+        <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5939081410008!2d30.322832821512165!3d59.938880399242294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1555169574069!5m2!1sru!2sru" width="320" height="375" allowfullscreen></iframe>
       </div>
       <div class="background-wrapper background-wrapper--footer">
         <div class="container">
@@ -184,5 +184,6 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/flex-polyfill.js"></script>
   </body>
 </html>

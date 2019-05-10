@@ -1,0 +1,127 @@
+.form-page {
+  .oswald-regular();
+}
+
+.form-page input::placeholder,
+.form-page textarea::placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.form-page__title {
+  font-size: 36px;
+  line-height: 60px;
+  color: #111111;
+  font-weight: normal;
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
+
+.form-page h2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+}
+
+.form-page__notice {
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+  text-align: center;
+  margin: 24px 10px 32px;
+  .arial-mt();
+}
+
+.form-page input[type="text"]:hover,
+.form-page input[type="email"]:hover,
+.form-page input[type="tel"]:hover {
+  border: solid 1px #cdcdcd;
+}
+
+.form-page input[type="text"]:focus,
+.form-page input[type="email"]:focus,
+.form-page input[type="tel"]:focus {
+  border: solid 2px #444444;
+}
+
+.form-page input[type="text"]:invalid,
+.form-page input[type="email"]:invalid,
+.form-page input[type="tel"]:invalid {
+  border: solid 2px #ff8282;
+}
+
+.form-page input[type="radio"]:hover ~ span::before {
+  box-shadow: 0 0 1px 1px #bababa;
+}
+
+.form-page input[type="radio"]:active ~ span::before,
+.form-page input[type="radio"]:active ~ span {
+  opacity: 0.3;
+}
+
+.form-page input[type="checkbox"]:hover ~ span::before {
+  border-color: #bababa;
+}
+
+.form-page input[type="checkbox"]:active ~ span::before,
+.form-page input[type="checkbox"]:active ~ span {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .form-page__main-form {
+    padding-left: 40px;
+  }
+
+  .form-page__title {
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .form-page h2 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form-page__notice {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .form-page input::placeholder,
+  .form-page textarea::placeholder {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form-page__last-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+
+  .form-page__last-block button {
+    margin: 0;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-page__main-form {
+    padding-left: 0;
+  }
+
+  .form-page__title {
+    margin-top: 75px;
+  }
+
+  .form-page__last-block button {
+    width: 568px;
+    box-sizing: border-box;
+  }
+}
