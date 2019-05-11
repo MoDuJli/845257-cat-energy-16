@@ -11,6 +11,7 @@
   font-size: 16px;
   line-height: 18px;
   color: #222222;
+  text-transform: uppercase;
 }
 
 .additional__input-box:last-child {
@@ -42,6 +43,10 @@
   background-size: 22px 17px;
 }
 
+.additional .green-line::after {
+  margin-left: 165px;
+}
+
 @media (min-width: @tablet-width) {
   .additional div {
     margin: 65px 0;
@@ -58,10 +63,40 @@
   .additional__input-box:nth-child(3) {
     margin-bottom: 0;
   }
+
+  .additional .green-line::after {
+    margin-left: 250px;
+  }
+
+  .additional__input-box span::before {
+    top: -10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .additional__input-box input:checked ~ span::before {
+    background: url("../img/icon-tick.svg") no-repeat 10px 10px;
+    background-size: 22px 17px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .additional__input-box {
     margin-bottom: 0;
+    width: 325px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional__input-box:last-child {
+    width: 200px;
+  }
+
+  .additional .green-line::before {
+    margin-left: -305px;
+  }
+
+  .additional div {
+    margin-bottom: 72px;
   }
 }
